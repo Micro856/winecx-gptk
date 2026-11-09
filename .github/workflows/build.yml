@@ -163,7 +163,6 @@ jobs:
       # extra-platforms = x86_64-darwin; installing over it would clobber a
       # real machine's daemon and store
       - name: install nix
-        if: inputs.runner == 'hosted'
         uses: DeterminateSystems/nix-installer-action@v23
         with:
           determinate: false
